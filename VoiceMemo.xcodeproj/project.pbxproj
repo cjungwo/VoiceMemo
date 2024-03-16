@@ -7,18 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A94BC252BA3E24B00433C02 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC242BA3E24B00433C02 /* SettingView.swift */; };
+		3A94BC272BA4662E00433C02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC262BA4662D00433C02 /* HomeViewModel.swift */; };
+		3A94BC292BA4671800433C02 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC282BA4671800433C02 /* Tab.swift */; };
 		3AFC98FD2B9F1A49009A7E34 /* VoiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC98FC2B9F1A49009A7E34 /* VoiceMemoApp.swift */; };
 		3AFC98FF2B9F1A49009A7E34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC98FE2B9F1A49009A7E34 /* ContentView.swift */; };
 		3AFC99012B9F1A4C009A7E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC99002B9F1A4C009A7E34 /* Assets.xcassets */; };
 		3AFC99042B9F1A4C009A7E34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC99032B9F1A4C009A7E34 /* Preview Assets.xcassets */; };
+		3AFC990B2B9F1A86009A7E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC990A2B9F1A86009A7E34 /* LaunchScreen.storyboard */; };
+		3AFC99122B9F1B3C009A7E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99112B9F1B3C009A7E34 /* AppDelegate.swift */; };
+		3AFC99162B9F1B90009A7E34 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99152B9F1B8F009A7E34 /* Date+Ext.swift */; };
+		3AFC992B2B9F1F50009A7E34 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC992A2B9F1F50009A7E34 /* OnboardingContent.swift */; };
+		3AFC992D2B9F1FAF009A7E34 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC992C2B9F1FAF009A7E34 /* OnboardingViewModel.swift */; };
+		3AFC992F2B9F1FC4009A7E34 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC992E2B9F1FC4009A7E34 /* OnboardingView.swift */; };
+		3AFC99332B9FC5D7009A7E34 /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99322B9FC5D7009A7E34 /* PathType.swift */; };
+		3AFC99352B9FC607009A7E34 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99342B9FC607009A7E34 /* Path.swift */; };
+		3AFC99372B9FC725009A7E34 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99362B9FC725009A7E34 /* HomeView.swift */; };
+		3AFC99392B9FC737009A7E34 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99382B9FC737009A7E34 /* TodoView.swift */; };
+		3AFC993B2B9FC743009A7E34 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC993A2B9FC743009A7E34 /* MemoView.swift */; };
+		3AFC993D2B9FF472009A7E34 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC993C2B9FF472009A7E34 /* TodoViewModel.swift */; };
+		3AFC993F2BA00E90009A7E34 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC993E2BA00E90009A7E34 /* CustomNavigationBar.swift */; };
+		3AFC99412BA00EA3009A7E34 /* NavigationBtnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99402BA00EA3009A7E34 /* NavigationBtnType.swift */; };
+		3AFC99432BA0105E009A7E34 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99422BA0105E009A7E34 /* Todo.swift */; };
+		3AFC99472BA0117E009A7E34 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99462BA0117E009A7E34 /* TodoListView.swift */; };
+		3AFC99492BA0118C009A7E34 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99482BA0118C009A7E34 /* TodoListViewModel.swift */; };
+		3AFC994B2BA175EA009A7E34 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC994A2BA175EA009A7E34 /* Memo.swift */; };
+		3AFC994D2BA17665009A7E34 /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC994C2BA17665009A7E34 /* MemoListViewModel.swift */; };
+		3AFC994F2BA17879009A7E34 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC994E2BA17879009A7E34 /* MemoListView.swift */; };
+		3AFC99512BA17F03009A7E34 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99502BA17F03009A7E34 /* MemoViewModel.swift */; };
+		3AFC99532BA1C271009A7E34 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99522BA1C271009A7E34 /* Double+Ext.swift */; };
+		3AFC99552BA1C2F5009A7E34 /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99542BA1C2F5009A7E34 /* VoiceRecorderViewModel.swift */; };
+		3AFC99572BA1CBC0009A7E34 /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99562BA1CBC0009A7E34 /* VoiceRecorderView.swift */; };
+		3AFC99592BA29064009A7E34 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99582BA29064009A7E34 /* Time.swift */; };
+		3AFC995B2BA29425009A7E34 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC995A2BA29425009A7E34 /* Int+Ext.swift */; };
+		3AFC995D2BA296B0009A7E34 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC995C2BA296B0009A7E34 /* TimerViewModel.swift */; };
+		3AFC995F2BA298B4009A7E34 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC995E2BA298B4009A7E34 /* TimerView.swift */; };
+		3AFC99612BA2A169009A7E34 /* UserNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC99602BA2A169009A7E34 /* UserNotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A94BC242BA3E24B00433C02 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		3A94BC262BA4662D00433C02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3A94BC282BA4671800433C02 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		3AFC98F92B9F1A49009A7E34 /* VoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFC98FC2B9F1A49009A7E34 /* VoiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoApp.swift; sourceTree = "<group>"; };
 		3AFC98FE2B9F1A49009A7E34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AFC99002B9F1A4C009A7E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AFC99032B9F1A4C009A7E34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AFC990A2B9F1A86009A7E34 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AFC99112B9F1B3C009A7E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AFC99152B9F1B8F009A7E34 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		3AFC992A2B9F1F50009A7E34 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		3AFC992C2B9F1FAF009A7E34 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		3AFC992E2B9F1FC4009A7E34 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3AFC99322B9FC5D7009A7E34 /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		3AFC99342B9FC607009A7E34 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		3AFC99362B9FC725009A7E34 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3AFC99382B9FC737009A7E34 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		3AFC993A2B9FC743009A7E34 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		3AFC993C2B9FF472009A7E34 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		3AFC993E2BA00E90009A7E34 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		3AFC99402BA00EA3009A7E34 /* NavigationBtnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBtnType.swift; sourceTree = "<group>"; };
+		3AFC99422BA0105E009A7E34 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		3AFC99462BA0117E009A7E34 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		3AFC99482BA0118C009A7E34 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		3AFC994A2BA175EA009A7E34 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		3AFC994C2BA17665009A7E34 /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
+		3AFC994E2BA17879009A7E34 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		3AFC99502BA17F03009A7E34 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
+		3AFC99522BA1C271009A7E34 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		3AFC99542BA1C2F5009A7E34 /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
+		3AFC99562BA1CBC0009A7E34 /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
+		3AFC99582BA29064009A7E34 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		3AFC995A2BA29425009A7E34 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		3AFC995C2BA296B0009A7E34 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		3AFC995E2BA298B4009A7E34 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		3AFC99602BA2A169009A7E34 /* UserNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +115,11 @@
 		3AFC98FB2B9F1A49009A7E34 /* VoiceMemo */ = {
 			isa = PBXGroup;
 			children = (
-				3AFC98FC2B9F1A49009A7E34 /* VoiceMemoApp.swift */,
+				3AFC99102B9F1AF2009A7E34 /* App */,
+				3AFC990F2B9F1AF0009A7E34 /* Core */,
+				3AFC990E2B9F1AEF009A7E34 /* Component */,
+				3AFC990D2B9F1AED009A7E34 /* Feature */,
+				3AFC990C2B9F1AEA009A7E34 /* Model */,
 				3AFC98FE2B9F1A49009A7E34 /* ContentView.swift */,
 				3AFC99002B9F1A4C009A7E34 /* Assets.xcassets */,
 				3AFC99022B9F1A4C009A7E34 /* Preview Content */,
@@ -65,6 +133,226 @@
 				3AFC99032B9F1A4C009A7E34 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AFC990C2B9F1AEA009A7E34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99252B9F1C14009A7E34 /* Path */,
+				3AFC99232B9F1C11009A7E34 /* Onboarding */,
+				3AFC99242B9F1C12009A7E34 /* Home */,
+				3AFC99222B9F1C0F009A7E34 /* Todo */,
+				3AFC99212B9F1C0E009A7E34 /* Memo */,
+				3AFC99202B9F1C0B009A7E34 /* Timer */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AFC990D2B9F1AED009A7E34 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC991A2B9F1BC2009A7E34 /* Onboarding */,
+				3AFC99192B9F1BBF009A7E34 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		3AFC990E2B9F1AEF009A7E34 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99182B9F1BAB009A7E34 /* CustomView */,
+				3AFC99172B9F1BA8009A7E34 /* NavigationBar */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		3AFC990F2B9F1AF0009A7E34 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99142B9F1B50009A7E34 /* Service */,
+				3AFC99132B9F1B4D009A7E34 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3AFC99102B9F1AF2009A7E34 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC98FC2B9F1A49009A7E34 /* VoiceMemoApp.swift */,
+				3AFC99112B9F1B3C009A7E34 /* AppDelegate.swift */,
+				3AFC990A2B9F1A86009A7E34 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3AFC99132B9F1B4D009A7E34 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99152B9F1B8F009A7E34 /* Date+Ext.swift */,
+				3AFC99522BA1C271009A7E34 /* Double+Ext.swift */,
+				3AFC995A2BA29425009A7E34 /* Int+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3AFC99142B9F1B50009A7E34 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99602BA2A169009A7E34 /* UserNotificationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3AFC99172B9F1BA8009A7E34 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC993E2BA00E90009A7E34 /* CustomNavigationBar.swift */,
+				3AFC99402BA00EA3009A7E34 /* NavigationBtnType.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		3AFC99182B9F1BAB009A7E34 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3AFC99192B9F1BBF009A7E34 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99362B9FC725009A7E34 /* HomeView.swift */,
+				3A94BC262BA4662D00433C02 /* HomeViewModel.swift */,
+				3AFC991B2B9F1BDF009A7E34 /* TodoList */,
+				3AFC991F2B9F1BF4009A7E34 /* MemoList */,
+				3AFC991D2B9F1BE6009A7E34 /* VoiceRecorder */,
+				3AFC991C2B9F1BE4009A7E34 /* Timer */,
+				3AFC991E2B9F1BE8009A7E34 /* Setting */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3AFC991A2B9F1BC2009A7E34 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC992E2B9F1FC4009A7E34 /* OnboardingView.swift */,
+				3AFC992C2B9F1FAF009A7E34 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3AFC991B2B9F1BDF009A7E34 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99262B9F1D4E009A7E34 /* Todo */,
+				3AFC99462BA0117E009A7E34 /* TodoListView.swift */,
+				3AFC99482BA0118C009A7E34 /* TodoListViewModel.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		3AFC991C2B9F1BE4009A7E34 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC995C2BA296B0009A7E34 /* TimerViewModel.swift */,
+				3AFC995E2BA298B4009A7E34 /* TimerView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		3AFC991D2B9F1BE6009A7E34 /* VoiceRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99562BA1CBC0009A7E34 /* VoiceRecorderView.swift */,
+				3AFC99542BA1C2F5009A7E34 /* VoiceRecorderViewModel.swift */,
+			);
+			path = VoiceRecorder;
+			sourceTree = "<group>";
+		};
+		3AFC991E2B9F1BE8009A7E34 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3A94BC242BA3E24B00433C02 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		3AFC991F2B9F1BF4009A7E34 /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99272B9F1D5C009A7E34 /* Memo */,
+				3AFC994C2BA17665009A7E34 /* MemoListViewModel.swift */,
+				3AFC994E2BA17879009A7E34 /* MemoListView.swift */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		3AFC99202B9F1C0B009A7E34 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99582BA29064009A7E34 /* Time.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		3AFC99212B9F1C0E009A7E34 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC994A2BA175EA009A7E34 /* Memo.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		3AFC99222B9F1C0F009A7E34 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99422BA0105E009A7E34 /* Todo.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		3AFC99232B9F1C11009A7E34 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC992A2B9F1F50009A7E34 /* OnboardingContent.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3AFC99242B9F1C12009A7E34 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3A94BC282BA4671800433C02 /* Tab.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3AFC99252B9F1C14009A7E34 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99322B9FC5D7009A7E34 /* PathType.swift */,
+				3AFC99342B9FC607009A7E34 /* Path.swift */,
+			);
+			name = Path;
+			sourceTree = "<group>";
+		};
+		3AFC99262B9F1D4E009A7E34 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC99382B9FC737009A7E34 /* TodoView.swift */,
+				3AFC993C2B9FF472009A7E34 /* TodoViewModel.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		3AFC99272B9F1D5C009A7E34 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC993A2B9FC743009A7E34 /* MemoView.swift */,
+				3AFC99502BA17F03009A7E34 /* MemoViewModel.swift */,
+			);
+			path = Memo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFC990B2B9F1A86009A7E34 /* LaunchScreen.storyboard in Resources */,
 				3AFC99042B9F1A4C009A7E34 /* Preview Assets.xcassets in Resources */,
 				3AFC99012B9F1A4C009A7E34 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +426,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFC995D2BA296B0009A7E34 /* TimerViewModel.swift in Sources */,
+				3AFC99332B9FC5D7009A7E34 /* PathType.swift in Sources */,
+				3AFC99122B9F1B3C009A7E34 /* AppDelegate.swift in Sources */,
+				3A94BC272BA4662E00433C02 /* HomeViewModel.swift in Sources */,
+				3AFC992D2B9F1FAF009A7E34 /* OnboardingViewModel.swift in Sources */,
+				3A94BC252BA3E24B00433C02 /* SettingView.swift in Sources */,
+				3AFC99572BA1CBC0009A7E34 /* VoiceRecorderView.swift in Sources */,
+				3AFC99372B9FC725009A7E34 /* HomeView.swift in Sources */,
+				3AFC99532BA1C271009A7E34 /* Double+Ext.swift in Sources */,
+				3AFC99492BA0118C009A7E34 /* TodoListViewModel.swift in Sources */,
+				3AFC992B2B9F1F50009A7E34 /* OnboardingContent.swift in Sources */,
+				3AFC99412BA00EA3009A7E34 /* NavigationBtnType.swift in Sources */,
 				3AFC98FF2B9F1A49009A7E34 /* ContentView.swift in Sources */,
+				3AFC99472BA0117E009A7E34 /* TodoListView.swift in Sources */,
+				3AFC993F2BA00E90009A7E34 /* CustomNavigationBar.swift in Sources */,
+				3AFC993D2B9FF472009A7E34 /* TodoViewModel.swift in Sources */,
+				3AFC994F2BA17879009A7E34 /* MemoListView.swift in Sources */,
+				3AFC99612BA2A169009A7E34 /* UserNotificationService.swift in Sources */,
+				3AFC994B2BA175EA009A7E34 /* Memo.swift in Sources */,
 				3AFC98FD2B9F1A49009A7E34 /* VoiceMemoApp.swift in Sources */,
+				3AFC99162B9F1B90009A7E34 /* Date+Ext.swift in Sources */,
+				3AFC99592BA29064009A7E34 /* Time.swift in Sources */,
+				3AFC99432BA0105E009A7E34 /* Todo.swift in Sources */,
+				3AFC99512BA17F03009A7E34 /* MemoViewModel.swift in Sources */,
+				3AFC99352B9FC607009A7E34 /* Path.swift in Sources */,
+				3AFC994D2BA17665009A7E34 /* MemoListViewModel.swift in Sources */,
+				3AFC99392B9FC737009A7E34 /* TodoView.swift in Sources */,
+				3A94BC292BA4671800433C02 /* Tab.swift in Sources */,
+				3AFC995F2BA298B4009A7E34 /* TimerView.swift in Sources */,
+				3AFC995B2BA29425009A7E34 /* Int+Ext.swift in Sources */,
+				3AFC993B2B9FC743009A7E34 /* MemoView.swift in Sources */,
+				3AFC992F2B9F1FC4009A7E34 /* OnboardingView.swift in Sources */,
+				3AFC99552BA1C2F5009A7E34 /* VoiceRecorderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +598,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +608,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visiondeveloper.VoiceMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +632,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +642,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visiondeveloper.VoiceMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

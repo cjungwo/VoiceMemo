@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+@Observable class Path {
+  var paths: [PathType]
+  
+  init(paths: [PathType] = []) {
+    self.paths = paths
+  }
+}

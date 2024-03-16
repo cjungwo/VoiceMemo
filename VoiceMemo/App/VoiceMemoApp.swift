@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct VoiceMemoApp: App {
+  @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+  @State private var path = Path()
+  
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
+            .environment(path)
         }
     }
 }

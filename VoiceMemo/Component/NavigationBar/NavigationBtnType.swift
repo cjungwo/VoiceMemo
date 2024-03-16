@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum NavigationBtnType: String {
+  case close
+  case edit
+  case complete
+  case create
+}
