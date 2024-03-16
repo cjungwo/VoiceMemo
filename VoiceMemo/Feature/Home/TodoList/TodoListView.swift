@@ -14,8 +14,9 @@ struct TodoListView: View {
   
   var body: some View {
     @Bindable var todoListViewModel = todoListViewModel
+  
     
-    ZStack {
+    WriteBtnView(content: {
       VStack {
         if !todoListViewModel.todos.isEmpty {
           CustomNavigationBar(
@@ -38,12 +39,9 @@ struct TodoListView: View {
           TodoListContentView()
         }
       }
-      
-      WriteTodoBtnView()
-        .padding(.trailing, 20)
-        .padding(.bottom, 50)
-      
-    }
+    }, action: {
+      path.paths.append(.todoView)
+    })
     .alert("Remove \(todoListViewModel.removeTodosCount) To do list", isPresented: $todoListViewModel.isDisplayRemoveTodoAlert) {
       Button(role: .destructive) {
         todoListViewModel.removeBtnTapped()

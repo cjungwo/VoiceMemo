@@ -10,6 +10,7 @@
 		3A94BC252BA3E24B00433C02 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC242BA3E24B00433C02 /* SettingView.swift */; };
 		3A94BC272BA4662E00433C02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC262BA4662D00433C02 /* HomeViewModel.swift */; };
 		3A94BC292BA4671800433C02 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC282BA4671800433C02 /* Tab.swift */; };
+		3A94BC2B2BA6440000433C02 /* WriteBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94BC2A2BA6440000433C02 /* WriteBtn.swift */; };
 		3AFC98FD2B9F1A49009A7E34 /* VoiceMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC98FC2B9F1A49009A7E34 /* VoiceMemoApp.swift */; };
 		3AFC98FF2B9F1A49009A7E34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC98FE2B9F1A49009A7E34 /* ContentView.swift */; };
 		3AFC99012B9F1A4C009A7E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC99002B9F1A4C009A7E34 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		3A94BC242BA3E24B00433C02 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		3A94BC262BA4662D00433C02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3A94BC282BA4671800433C02 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		3A94BC2A2BA6440000433C02 /* WriteBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteBtn.swift; sourceTree = "<group>"; };
 		3AFC98F92B9F1A49009A7E34 /* VoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFC98FC2B9F1A49009A7E34 /* VoiceMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMemoApp.swift; sourceTree = "<group>"; };
 		3AFC98FE2B9F1A49009A7E34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		3AFC99182B9F1BAB009A7E34 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				3A94BC2A2BA6440000433C02 /* WriteBtn.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -282,8 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				3AFC99272B9F1D5C009A7E34 /* Memo */,
-				3AFC994C2BA17665009A7E34 /* MemoListViewModel.swift */,
 				3AFC994E2BA17879009A7E34 /* MemoListView.swift */,
+				3AFC994C2BA17665009A7E34 /* MemoListViewModel.swift */,
 			);
 			path = MemoList;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				3AFC99372B9FC725009A7E34 /* HomeView.swift in Sources */,
 				3AFC99532BA1C271009A7E34 /* Double+Ext.swift in Sources */,
 				3AFC99492BA0118C009A7E34 /* TodoListViewModel.swift in Sources */,
+				3A94BC2B2BA6440000433C02 /* WriteBtn.swift in Sources */,
 				3AFC992B2B9F1F50009A7E34 /* OnboardingContent.swift in Sources */,
 				3AFC99412BA00EA3009A7E34 /* NavigationBtnType.swift in Sources */,
 				3AFC98FF2B9F1A49009A7E34 /* ContentView.swift in Sources */,

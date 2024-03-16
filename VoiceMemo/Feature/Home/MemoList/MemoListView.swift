@@ -14,34 +14,31 @@ struct MemoListView: View {
   
   var body: some View {
     @Bindable var memoListViewModel = memoListViewModel
-    ZStack {
-      VStack {
-        if !memoListViewModel.memos.isEmpty {
-          CustomNavigationBar(
-            isDisplayLeftBtn: false,
-            rightBtnAction: {
-              memoListViewModel.navigationRightBtnTapped()
-            },
-            rightBtnType: memoListViewModel.navigationBarRightBtnMode
-          )
-        } else {
-          Spacer()
-            .frame(height: 30)
-        }
-        
-        TitleView()
-        
-        if memoListViewModel.memos.isEmpty {
-          AnnouncementView()
-        } else {
-          MemoListContentView()
-            .padding(.top, 20)
-        }
+    VStack {
+      if !memoListViewModel.memos.isEmpty {
+        CustomNavigationBar(
+          isDisplayLeftBtn: false,
+          rightBtnAction: {
+            memoListViewModel.navigationRightBtnTapped()
+          },
+          rightBtnType: memoListViewModel.navigationBarRightBtnMode
+        )
+      } else {
+        Spacer()
+          .frame(height: 30)
       }
       
-      WrightMemoBtnView()
-        .padding(.trailing, 20)
-        .padding(.bottom, 50)
+      TitleView()
+      
+      if memoListViewModel.memos.isEmpty {
+        AnnouncementView()
+      } else {
+        MemoListContentView()
+          .padding(.top, 20)
+      }
+    }
+    .writeBtn {
+      path.paths.append(.memoView(isCreateMode: true, memo: nil))
     }
     .alert(
       "Remove \(memoListViewModel.removeMemoCount) memo",
@@ -185,35 +182,6 @@ private struct MemoCellView: View {
       }
     }
 
-  }
-}
-
-// MARK: - WriteMemoBtnView
-private struct WrightMemoBtnView: View {
-  @Environment(Path.self) var path
-  
-  fileprivate var body: some View {
-    VStack {
-      Spacer()
-      
-      HStack {
-        Spacer()
-        
-        Button {
-          path.paths.append(.memoView(isCreateMode: true, memo: nil))
-        } label: {
-          Circle()
-            .fill(.customGreen)
-            .frame(width: 64, height: 64)
-            .overlay {
-              Image(systemName: "pencil")
-                .resizable()
-                .frame(width: 32, height: 24)
-                .foregroundStyle(.customWhite)
-            }
-        }
-      }
-    }
   }
 }
 
