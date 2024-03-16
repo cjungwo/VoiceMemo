@@ -190,7 +190,7 @@ private struct MemoCellView: View {
 
 // MARK: - WriteMemoBtnView
 private struct WrightMemoBtnView: View {
-  @Environment(Path.self) private var path
+  @Environment(Path.self) var path
   
   fileprivate var body: some View {
     VStack {

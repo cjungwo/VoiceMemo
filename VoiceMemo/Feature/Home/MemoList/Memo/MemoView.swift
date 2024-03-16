@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct MemoView: View {
-  @Environment(Path.self) private var path
-  @Environment(MemoListViewModel.self) private var memoListViewModel
-  @StateObject var memoViewModel: MemoViewModel
+  @Environment(Path.self) var path
+  @Environment(MemoListViewModel.self) var memoListViewModel
+  @State var memoViewModel: MemoViewModel
   @State var isCreateMode: Bool = true
   
   var body: some View {
@@ -55,7 +55,7 @@ struct MemoView: View {
 
 // MARK: - MemoTitleView
 private struct MemoTitleView: View {
-  @ObservedObject private var memoViewModel: MemoViewModel
+  @Bindable private var memoViewModel: MemoViewModel
   @FocusState private var isTitleFieldFocused: Bool
   @Binding private var isCreateMode: Bool
 
@@ -85,7 +85,7 @@ private struct MemoTitleView: View {
 
 // MARK: - MemoContentInputView
 private struct MemoContentInputView: View {
-  @ObservedObject private var memoViewModel: MemoViewModel
+  @Bindable private var memoViewModel: MemoViewModel
   
   fileprivate init(memoViewModel: MemoViewModel) {
     self.memoViewModel = memoViewModel
@@ -111,9 +111,9 @@ private struct MemoContentInputView: View {
 
 // MARK: RemoveMemoBtnView
 private struct RemoveMemoBtnView: View {
-  @Environment(Path.self) private var path
-  @Environment(MemoListViewModel.self) private var memoListViewModel
-  @ObservedObject private var memoViewModel: MemoViewModel
+  @Environment(Path.self) var path
+  @Environment(MemoListViewModel.self) var memoListViewModel
+  private var memoViewModel: MemoViewModel
   
   fileprivate init(memoViewModel: MemoViewModel) {
     self.memoViewModel = memoViewModel
@@ -142,7 +142,7 @@ private struct RemoveMemoBtnView: View {
 
 #Preview {
   MemoView(
-    memoViewModel: .init(
+    memoViewModel: MemoViewModel(
       memo: .init(
         title: "",
         content: "",
@@ -150,4 +150,6 @@ private struct RemoveMemoBtnView: View {
       )
     )
   )
+  .environment(Path())
+  .environment(MemoListViewModel())
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-class MemoViewModel: ObservableObject {
-  @Published var memo: Memo
+@Observable class MemoViewModel {
+  var memo: Memo
   
   init(memo: Memo) {
     self.memo = memo
